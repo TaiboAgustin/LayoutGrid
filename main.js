@@ -49,23 +49,23 @@ function productoIngresado (){
 
         case "tapabocas":
             precioProducto = 500;
-            productoElegido = new tapabocas (precioProducto, equipo, talle);
+            productoElegido = new tapabocas (precioProducto, equipo);
             arrayDeProductos.push(productoElegido);
             alert ("Usted ha elegido comprar un Tapabocas de " + productoElegido.equipo + " cuyo precio es de $" + productoElegido.precioProducto + ", de ser asi, presione Aceptar.");
         break;
         
         case "gorra":
             precioProducto = 1500;
-            productoElegido = new accesorio (precioProducto, equipo, talle);
+            productoElegido = new accesorio (productoAComprar, precioProducto, equipo);
             arrayDeProductos.push(productoElegido);
-            alert ("Usted ha elegido comprar un: " + productoElegido.tipoDeAccesorio + "de: " + productoElegido.equipo + " cuyo precio es de $" + productoElegido.precioProducto + ", de ser asi, presione Aceptar.");
+            alert ("Usted ha elegido comprar lo siguiente: " + productoElegido.productoAComprar + " de  " + productoElegido.equipo + " cuyo precio es de $" + productoElegido.precioProducto + ", de ser asi, presione Aceptar.");
         break;
 
         case "llavero":
             precioProducto = 600;
             productoElegido = new accesorio (productoAComprar, precioProducto, equipo);
-            arrayDeProductos.push(Prenda);
-            alert ("Usted ha elegido comprar un: " + productoElegido.tipoDeAccesorio + "de: " + productoElegido.equipo + " cuyo precio es de $" + productoElegido.precioProducto + ", de ser asi, presione Aceptar.");
+            arrayDeProductos.push(productoElegido);
+            alert ("Usted ha elegido comprar un: " + productoElegido.productoAComprar + "de: " + productoElegido.equipo + " cuyo precio es de $" + productoElegido.precioProducto + ", de ser asi, presione Aceptar.");
         break;
 
         default:
@@ -104,7 +104,7 @@ function cuotas(){
 
     switch (cantidadDeCuotas){
         case "1":
-            alert ("Muy bien! El precio a pagar por tu" + productoAComprar + "es de $" + precioProducto + ". Presione el boton de continuar para proceder a las opciones de envio. \n Muchas gracias por confiar en Esports Store!");
+            alert ("Muy bien! El precio a pagar por tu " + productoAComprar + " es de $" + precioProducto + ". Presione el boton de continuar para proceder a las opciones de envio. \n Muchas gracias por confiar en Esports Store!");
         break;
     
         case "3":

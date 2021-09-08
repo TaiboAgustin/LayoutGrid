@@ -117,10 +117,12 @@ h3{
 .producto{
     background-color: var(--primarioClaro);
     padding: 1rem;
+    
 }
 
 .imagenProducto{
     width: 100%;
+    height: 400px;
 }
 
 .nombreProducto{
